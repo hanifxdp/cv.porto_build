@@ -224,7 +224,7 @@ header{
 	right: 0;
 	width: 50px;
 	height: 3px;
-	
+	background: black;
 }
 
 .left .icon{
@@ -272,4 +272,108 @@ header{
 .right_nama .kerjaan{
     font-weight: 300;
     font-size: 20px;
+}
+
+.right_nama .about_meh{
+    margin-top: 20px;
+    line-height: 26px;
+}
+
+.right_inner{
+    padding: 30px;
+    color: black;
+}
+
+.right_inner .exp{
+    padding-top: 40px;
+}
+
+.right_inner .education{
+    margin-top: 30px;
+}
+
+.right_inner .li_wrap{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.right_inner .li_wrap .date{
+    width: 125px;
+    color: black;
+}
+
+.right_inner .li_wrap .info{
+	width: calc(100%  - 125px);
+	padding-left: 25px;
+	position: relative;
+}
+
+.right_inner .li_wrap .info_title{
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: black;
+}
+
+.right_inner .li_wrap .info_com{
+	font-weight: 300;
+	font-size: 14px;
+	margin-top: 3px;
+}
+
+.right_inner .li_wrap .info_cont{
+	margin-top: 15px;
+}
+
+.right_inner .li_wrap .info:before{
+	content: "";
+	position: absolute;
+	top: 3px;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	background: black;
+	border-radius: 50%;
+}
+
+.right_inner .li_wrap .info:after{
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 4px;
+	width: 2px;
+	height: 90%;
+	background:black;
+}
+
+li {
+    list-style: none;
+}
+
+/*===============================*/
+/* Showcase*/
+/*===============================*/
+.section-showcase{
+    padding: 0;
+}
+
+.showcase{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.showcase-photo{
+
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
 }

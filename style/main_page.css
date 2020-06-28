@@ -259,6 +259,53 @@ header{
 	word-break: break-word;
 }
 
+.skills ul,
+.hobbies ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.skills .li_wrap,
+.hobbies .li_wrap{
+	width: 100px;
+	height: 100px;
+	margin-bottom: 15px;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    justify-content: center;
+    text-align: center  ;
+}
+
+.skills .li_wrap{
+	background: white;
+}
+
+.skills .li_wrap .text,
+.hobbies .li_wrap .text{
+	margin-top: 5px;
+}
+
+.hobbies .li_wrap{
+	border: 2px solid blacks;
+}
+
+.hobbies .li_wrap .icon,
+.hobbies .li_wrap .text{
+	color: black;
+}
+
+.hobbies .li_wrap:hover{
+	background: black;
+}
+
+.hobbies .li_wrap:hover .icon,
+.hobbies .li_wrap:hover .text{
+	color: black;
+}
+
 .right_nama{
     padding: 15px 30px;
     height: 240px;
@@ -277,6 +324,7 @@ header{
 .right_nama .about_meh{
     margin-top: 20px;
     line-height: 26px;
+    text-align: justify;
 }
 
 .right_inner{
@@ -366,9 +414,9 @@ li {
 }
 
 .showcase li{
-    display: block;
+    display: flex;
     float: left;
-    width: 25%;
+    width: 100%;
 }
 
 .showcase-photo{
